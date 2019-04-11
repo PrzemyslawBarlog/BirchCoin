@@ -20,4 +20,4 @@ Projest is still WIP
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 ## Credits
-Supervisor: Przemysław Walkowiak
+Supervisor: Paweł Misiorek
