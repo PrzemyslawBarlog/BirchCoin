@@ -71,5 +71,4 @@
             app:layout_constraintTop_toTopOf="@+id/button"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
             android:layout_marginStart="7dp" app:layout_constraintBottom_toBottomOf="@+id/button"/>
-
 </android.support.constraint.ConstraintLayout>
