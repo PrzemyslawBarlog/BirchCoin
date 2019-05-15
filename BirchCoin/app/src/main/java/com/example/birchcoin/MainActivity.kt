@@ -12,12 +12,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
+import android.widget.Button
+
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
 
     var running = false
     var sensorManager:SensorManager? = null
     lateinit var mAdView : AdView
+    var temp: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +30,14 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+       val button3 = findViewById<Button>(R.id.button3)
+
+        button3.setOnClickListener {
+
+            temp = (stepsValue.toString()).toInt()
+            stepsValue.setText("" + (stepsValue.toString()).toInt().minus(temp))
+            progressBar.progress = (stepsValue.toString()).toInt().minus(temp)
+        }
     }
 
     override fun onResume() {
@@ -52,7 +63,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
     override fun onSensorChanged(event: SensorEvent) {
         if (running) {
-            stepsValue.setText("" + event.values[0])
+            stepsValue.setText("" + (event.values[0]).toInt())
+            progressBar.progress = (event.values[0]).toInt()
         }
     }
 }
