@@ -13,6 +13,7 @@ import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import android.widget.Button
+import android.content.Intent
 
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
@@ -34,9 +35,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         button3.setOnClickListener {
 
-            temp = (stepsValue.toString()).toInt()
-            stepsValue.setText("" + (stepsValue.toString()).toInt().minus(temp))
-            progressBar.progress = (stepsValue.toString()).toInt().minus(temp)
+            val intent = Intent(this, loginEvent::class.java)
+            startActivity(intent)
         }
     }
 
