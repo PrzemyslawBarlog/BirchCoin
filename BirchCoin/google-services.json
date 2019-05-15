@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "1031880226298",
+    "firebase_url": "https://birchcoin-19972.firebaseio.com",
+    "project_id": "birchcoin-19972",
+    "storage_bucket": "birchcoin-19972.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031880226298:android:e0ab99a92aa7a4a1",
+        "android_client_info": {
+          "package_name": "com.example.birchcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031880226298-cesq3l6slobg12sdkf8qc1fddmfaef84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4odcAdcvsvNY61RmMvDBIYf-gN3z3hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031880226298-cesq3l6slobg12sdkf8qc1fddmfaef84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-4002528247773089~7509761805"
+    }
+  ],
+  "configuration_version": "1"
+}
